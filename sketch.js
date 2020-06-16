@@ -9,12 +9,14 @@ var rectangle1,rectangle2,rectangle3;
 function preload()
 {
 	ballimg=loadImage("paper.png");
+	
 }
 
 function setup() {
 	createCanvas(800, 700);
    ball= createSprite(30,600,20,20);
    ball.addImage(ballimg)
+   ball.scale=0;
    rectangle1= createSprite(550,650,10,100);
    rectangle2=createSprite(600,700,100,10);
    rectangle3=createSprite(650,650,10,100);
@@ -43,7 +45,7 @@ function draw() {
 
  ball.x=mouseX;
  ball.y=mouseY;
-  background(0);
+  background(252,1,0);
   display();
 
   drawSprites();
